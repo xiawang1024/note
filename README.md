@@ -6,3 +6,9 @@
   html{
     -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
+##fastclick
+  if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+      }, false);
+  }
