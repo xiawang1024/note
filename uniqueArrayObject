@@ -1,0 +1,20 @@
+function unique(arr){
+		let len = arr.length;
+		if(len>0){
+			const newarr=[arr[0]];
+		}
+		for(let i=1;i<len;i++){
+			let item = arr[i];//
+			repeat = false;
+			for(let j =0 ;j<newarr.length;j++){
+				if(_.isEqual(newarr[j],item)){
+					repeat = true;
+					break;
+				}
+			}
+			if(!repeat){
+				newarr.push(item)
+			}
+		}
+		return newarr;
+	}
